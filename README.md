@@ -1,4 +1,7 @@
 # Integrated Control and Data Acquisition System for Kneespa DRx
+
+![A diagram overviewing the project structure.](diagram.png)
+
 ## Overview
 This repository provides an integrated control and data acquisition system designed for precise hardware device management and data processing. The system is structured to interface with hardware devices, specifically through the HX711 load cell amplifier for accurate weight measurements, and to control these devices via a user-friendly graphical interface. The architecture is modular, focusing on clear separation of concerns, which allows for ease of maintenance, scalability, and integration of additional components or protocols as required.
 
