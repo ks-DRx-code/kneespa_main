@@ -1,11 +1,11 @@
-## Integrated Control and Data Acquisition System for Kneespa DRx
-# Overview
+# Integrated Control and Data Acquisition System for Kneespa DRx
+## Overview
 This repository provides an integrated control and data acquisition system designed for precise hardware device management and data processing. The system is structured to interface with hardware devices, specifically through the HX711 load cell amplifier for accurate weight measurements, and to control these devices via a user-friendly graphical interface. The architecture is modular, focusing on clear separation of concerns, which allows for ease of maintenance, scalability, and integration of additional components or protocols as required.
 
-# System Architecture Codemap
+## System Architecture Codemap
 At the core of the system's architecture is the division into four main subgraphs, each responsible for a distinct aspect of the system's functionality:
 
-# 1. Data Acquisition
+## 1. Data Acquisition
 The Data Acquisition module is centered around the HX711 Data Acquisition component, which interfaces with HX711 load cell amplifiers. This module is crucial for obtaining accurate weight measurements. It employs Python classes for direct communication with the HX711 chip, handling data processing, filtering, and debugging.
 
 Key Files & Modules:
@@ -13,7 +13,7 @@ Key Files & Modules:
 hx711py-master/
 HX711-master/
 
-# 2. Control Protocols
+## 2. Control Protocols
 This module implements the logic for device control and configuration management. It includes protocols for device operation and facilitates configuration and communication between the system's components and the Arduino microcontroller for executing device-specific commands.
 
 Key Components:
@@ -23,7 +23,7 @@ DProtocols.py
 BProtocols.Arduino.py
 calibrate.py
 
-# 3. User Interface and System Management
+## 3. User Interface and System Management
 The GUI and System Control component utilizes PyQt5 to create a graphical user interface that allows users to interact with the system, control devices, and manage system settings. It also includes functionality for executing system commands like rebooting or shutting down.
 
 Key Components:
@@ -31,7 +31,7 @@ Key Components:
 kneespa.pi.py
 kneespa.small.py
 
-# 4. Hardware Devices
+## 4. Hardware Devices
 This module encompasses the physical devices controlled by the system, including the Arduino microcontroller and various hardware devices. It details the feedback mechanisms and control pathways between the hardware and the control protocols.
 
 Key Components:
